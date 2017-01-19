@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PickMeUp" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1T-Pp-UxV">
+                                <rect key="frame" x="140" y="114" width="96" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="DMv-Hk-LSb"/>
+                                    <constraint firstAttribute="height" constant="28" id="xHl-As-kiv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-EZ-rgs">
+                                <rect key="frame" x="109" y="311" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="Bkq-jz-1IX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SeQ-9p-cfh">
+                                <rect key="frame" x="109" y="365" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="VDD-nc-FG0"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7NP-ku-BNh">
+                                <rect key="frame" x="163" y="466" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="JGC-HV-cPM"/>
+                                </constraints>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ride!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apb-zU-AFD">
+                                <rect key="frame" x="115" y="471" width="40" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="eJt-rt-K5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPa-rD-lTK">
+                                <rect key="frame" x="163" y="519" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="ZoU-1p-2up"/>
+                                </constraints>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="signUpOrLogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tmv-5v-OMj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjY-mi-OMt">
+                                <rect key="frame" x="179" y="557" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="JKe-aO-55y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5S-nI-qxf">
+                                <rect key="frame" x="128" y="586" width="119" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="O0o-De-N4C"/>
+                                </constraints>
+                                <state key="normal" title="Want to Sign Up?"/>
+                                <connections>
+                                    <action selector="switchSignUpMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7f2-iu-Zse"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drive!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdG-7n-CBh">
+                                <rect key="frame" x="220" y="471" width="47.5" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-eF-7gg">
+                                <rect key="frame" x="109" y="419" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="157" id="ulL-34-BB1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PickMeUp1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tP0-Zu-YqI">
+                                <rect key="frame" x="153" y="187" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="EWj-9S-ZSx"/>
+                                    <constraint firstAttribute="height" constant="68" id="u2y-y2-IuL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SeQ-9p-cfh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Cp-pw-bjb"/>
+                            <constraint firstItem="UMR-eF-7gg" firstAttribute="top" secondItem="SeQ-9p-cfh" secondAttribute="bottom" constant="24" id="3LR-F1-IP4"/>
+                            <constraint firstItem="SPa-rD-lTK" firstAttribute="top" secondItem="7NP-ku-BNh" secondAttribute="bottom" constant="22" id="8B6-p7-SrT"/>
+                            <constraint firstItem="SjY-mi-OMt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8IS-ur-Hbf"/>
+                            <constraint firstItem="l1T-Pp-UxV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8p3-Ap-KrP"/>
+                            <constraint firstItem="apb-zU-AFD" firstAttribute="top" secondItem="SeQ-9p-cfh" secondAttribute="bottom" constant="76" id="DxZ-1U-cNl"/>
+                            <constraint firstItem="xwf-EZ-rgs" firstAttribute="top" secondItem="l1T-Pp-UxV" secondAttribute="bottom" constant="169" id="HgO-B4-xaj"/>
+                            <constraint firstItem="SjY-mi-OMt" firstAttribute="top" secondItem="SPa-rD-lTK" secondAttribute="bottom" constant="8" id="N7w-76-l3P"/>
+                            <constraint firstItem="tP0-Zu-YqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O3w-fj-Gnq"/>
+                            <constraint firstItem="7NP-ku-BNh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R6T-bn-bLu"/>
+                            <constraint firstItem="tP0-Zu-YqI" firstAttribute="top" secondItem="l1T-Pp-UxV" secondAttribute="bottom" constant="45" id="S9G-Kp-aOk"/>
+                            <constraint firstItem="jdG-7n-CBh" firstAttribute="leading" secondItem="7NP-ku-BNh" secondAttribute="trailing" constant="8" id="Zw6-sy-UJS"/>
+                            <constraint firstItem="7NP-ku-BNh" firstAttribute="leading" secondItem="apb-zU-AFD" secondAttribute="trailing" constant="8" id="d7f-w9-lKA"/>
+                            <constraint firstItem="SeQ-9p-cfh" firstAttribute="top" secondItem="xwf-EZ-rgs" secondAttribute="bottom" constant="24" id="dm6-Q0-hbO"/>
+                            <constraint firstItem="7NP-ku-BNh" firstAttribute="top" secondItem="SeQ-9p-cfh" secondAttribute="bottom" constant="71" id="g8C-9D-Bvl"/>
+                            <constraint firstItem="J5S-nI-qxf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="geS-2o-Uoh"/>
+                            <constraint firstItem="SPa-rD-lTK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="hiC-I7-LuX"/>
+                            <constraint firstItem="jdG-7n-CBh" firstAttribute="top" secondItem="SeQ-9p-cfh" secondAttribute="bottom" constant="76" id="oIA-ad-xzV"/>
+                            <constraint firstItem="UMR-eF-7gg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rzm-m0-5zd"/>
+                            <constraint firstItem="l1T-Pp-UxV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="94" id="xRU-43-Utn"/>
+                            <constraint firstItem="xwf-EZ-rgs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xgs-OW-Ebc"/>
+                            <constraint firstItem="J5S-nI-qxf" firstAttribute="top" secondItem="SjY-mi-OMt" secondAttribute="bottom" constant="8" id="zEh-tw-UpZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="UMR-eF-7gg" id="Jzw-ce-aPv"/>
+                        <outlet property="driveLabelOutlet" destination="jdG-7n-CBh" id="K0n-fE-Mrb"/>
+                        <outlet property="passwordTextField" destination="SeQ-9p-cfh" id="X6b-Bh-oHU"/>
+                        <outlet property="rideLabelOutlet" destination="apb-zU-AFD" id="mEW-z4-fu4"/>
+                        <outlet property="rideOrDriveSwitch" destination="7NP-ku-BNh" id="koc-4h-sqZ"/>
+                        <outlet property="signUpOrLoginCheckOutlet" destination="SPa-rD-lTK" id="h8P-kW-dW3"/>
+                        <outlet property="switchSignUpModeOutlet" destination="J5S-nI-qxf" id="Wfr-cU-Vj5"/>
+                        <outlet property="usernameTextField" destination="xwf-EZ-rgs" id="CYd-fS-O2U"/>
+                        <segue destination="cbg-LS-Gsq" kind="show" identifier="showRiderProfileViewController" id="aet-hn-GYA"/>
+                        <segue destination="o5k-pl-J9p" kind="show" identifier="showDriverProfile" id="USU-91-PF7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375.19999999999999" y="-1.3493253373313345"/>
+        </scene>
+        <!--Request List-->
+        <scene sceneID="fWT-pl-a7h">
+            <objects>
+                <tableViewController id="mUR-st-xKQ" customClass="DriverOrderTableViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sTN-Ue-n4F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="8JE-Sk-Hsl">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8JE-Sk-Hsl" id="xZL-1n-eUl">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="x6M-JP-o9c" kind="show" identifier="showDriverSeeRequestViewController" id="iqd-8i-QRq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mUR-st-xKQ" id="NtV-23-RDh"/>
+                            <outlet property="delegate" destination="mUR-st-xKQ" id="VDK-IN-2gA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Request List" id="BUl-nT-oQZ">
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="wRh-4B-kNy">
+                            <connections>
+                                <segue destination="o5k-pl-J9p" kind="show" identifier="backToDriverProfileViewController" id="5Py-gY-ebe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0n-Qk-ZlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="475"/>
+        </scene>
+        <!--Driver See Request View Controller-->
+        <scene sceneID="Oow-Rm-YeR">
+            <objects>
+                <viewController id="x6M-JP-o9c" customClass="DriverSeeRequestViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rbC-MQ-ODm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZKr-Iv-nCG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LoB-Ex-bnc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xBS-bB-Rie">
+                                <rect key="frame" x="40" y="476" width="96" height="26"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7A-IJ-2Hd">
+                                <rect key="frame" x="37" y="528" width="99" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="O7A-IJ-2Hd" secondAttribute="height" multiplier="99:23" id="AXO-BL-UaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-K2-PcS">
+                                <rect key="frame" x="16" y="170" width="343" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="d0v-Vi-cWN"/>
+                                    <constraint firstAttribute="width" constant="343" id="gve-2X-uSP"/>
+                                    <constraint firstAttribute="width" secondItem="chZ-K2-PcS" secondAttribute="height" multiplier="343:290" id="xdf-uC-YrW"/>
+                                </constraints>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick Me Up When:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcr-sP-ffZ">
+                                <rect key="frame" x="37" y="573" width="152" height="22"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Token Bid:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqb-tP-dhm">
+                                <rect key="frame" x="37" y="97" width="86" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xqb-tP-dhm" secondAttribute="height" multiplier="86:23" id="rzN-E3-MNB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwQ-gH-jEy">
+                                <rect key="frame" x="235" y="476" width="82" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="rhr-O4-ldY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxG-o4-aRa">
+                                <rect key="frame" x="235" y="575" width="76" height="20"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Tokens" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-uE-B4I">
+                                <rect key="frame" x="177" y="93" width="140" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="8wH-r4-MC1"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5d-Ql-3Pn">
+                                <rect key="frame" x="235" y="524" width="82" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="AVL-3s-t5p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tM3-Tg-gP6">
+                                <rect key="frame" x="150" y="617" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tM3-Tg-gP6" secondAttribute="height" multiplier="5:2" id="u0n-7a-Hqc"/>
+                                </constraints>
+                                <state key="normal" title="Send Offer"/>
+                                <connections>
+                                    <action selector="sendOfferButton:" destination="x6M-JP-o9c" eventType="touchUpInside" id="YdI-BT-AcO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-kL-gey">
+                                <rect key="frame" x="226" y="100" width="14" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZKr-Iv-nCG" firstAttribute="top" secondItem="tM3-Tg-gP6" secondAttribute="bottom" constant="20" id="1XS-fu-QEQ"/>
+                            <constraint firstItem="chZ-K2-PcS" firstAttribute="top" secondItem="6gO-uE-B4I" secondAttribute="bottom" constant="49" id="4ck-E7-zE5"/>
+                            <constraint firstItem="P5d-Ql-3Pn" firstAttribute="top" secondItem="pwQ-gH-jEy" secondAttribute="bottom" constant="26" id="5uU-mj-IKY"/>
+                            <constraint firstAttribute="bottom" secondItem="pwQ-gH-jEy" secondAttribute="bottom" constant="169" id="8Rt-vW-eKZ"/>
+                            <constraint firstItem="Lcr-sP-ffZ" firstAttribute="top" secondItem="O7A-IJ-2Hd" secondAttribute="bottom" constant="22" id="8Vn-Yg-91p"/>
+                            <constraint firstItem="xBS-bB-Rie" firstAttribute="leading" secondItem="LoB-Ex-bnc" secondAttribute="leadingMargin" constant="24" id="Cr2-2W-nZN"/>
+                            <constraint firstItem="6gO-uE-B4I" firstAttribute="top" secondItem="rbC-MQ-ODm" secondAttribute="bottom" constant="29" id="EP6-4n-ZaL"/>
+                            <constraint firstItem="xBS-bB-Rie" firstAttribute="top" secondItem="chZ-K2-PcS" secondAttribute="bottom" constant="16" id="FLf-Gm-EYf"/>
+                            <constraint firstItem="xBS-bB-Rie" firstAttribute="trailing" secondItem="O7A-IJ-2Hd" secondAttribute="trailing" id="InK-eb-ehs"/>
+                            <constraint firstAttribute="trailing" secondItem="tdu-kL-gey" secondAttribute="trailing" constant="135" id="L3c-bI-Vep"/>
+                            <constraint firstItem="chZ-K2-PcS" firstAttribute="centerX" secondItem="LoB-Ex-bnc" secondAttribute="centerX" id="N7Z-kj-c7E"/>
+                            <constraint firstItem="Lcr-sP-ffZ" firstAttribute="bottom" secondItem="ZxG-o4-aRa" secondAttribute="bottom" id="OAj-aj-prB"/>
+                            <constraint firstItem="Lcr-sP-ffZ" firstAttribute="firstBaseline" secondItem="ZxG-o4-aRa" secondAttribute="baseline" id="YHs-Ut-uXS"/>
+                            <constraint firstItem="xqb-tP-dhm" firstAttribute="top" secondItem="rbC-MQ-ODm" secondAttribute="bottom" constant="33" id="YiB-cI-iGV"/>
+                            <constraint firstItem="O7A-IJ-2Hd" firstAttribute="top" secondItem="xBS-bB-Rie" secondAttribute="bottom" constant="26" id="ZRf-wH-kUc"/>
+                            <constraint firstItem="xBS-bB-Rie" firstAttribute="firstBaseline" secondItem="pwQ-gH-jEy" secondAttribute="baseline" id="bIp-ki-AlU"/>
+                            <constraint firstItem="Lcr-sP-ffZ" firstAttribute="leading" secondItem="O7A-IJ-2Hd" secondAttribute="leading" id="bkZ-fm-IHq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6gO-uE-B4I" secondAttribute="trailing" constant="42" id="cHR-to-lWC"/>
+                            <constraint firstItem="pwQ-gH-jEy" firstAttribute="trailing" secondItem="6gO-uE-B4I" secondAttribute="trailing" id="cPv-Wd-C1B"/>
+                            <constraint firstItem="ZKr-Iv-nCG" firstAttribute="top" secondItem="ZxG-o4-aRa" secondAttribute="bottom" constant="72" id="crp-sx-tyx"/>
+                            <constraint firstItem="ZxG-o4-aRa" firstAttribute="leading" secondItem="Lcr-sP-ffZ" secondAttribute="trailing" constant="46" id="eyB-ee-MrI"/>
+                            <constraint firstItem="O7A-IJ-2Hd" firstAttribute="leading" secondItem="LoB-Ex-bnc" secondAttribute="leadingMargin" constant="21" id="fS3-IR-D0q"/>
+                            <constraint firstItem="xqb-tP-dhm" firstAttribute="leading" secondItem="LoB-Ex-bnc" secondAttribute="leadingMargin" constant="21" id="hJp-LB-f5k"/>
+                            <constraint firstItem="pwQ-gH-jEy" firstAttribute="leading" secondItem="ZxG-o4-aRa" secondAttribute="leading" id="ohi-ZO-0tB"/>
+                            <constraint firstItem="tdu-kL-gey" firstAttribute="firstBaseline" secondItem="xqb-tP-dhm" secondAttribute="baseline" id="pL1-Ez-8N0"/>
+                            <constraint firstItem="xBS-bB-Rie" firstAttribute="top" secondItem="pwQ-gH-jEy" secondAttribute="top" id="qQL-XP-tRg"/>
+                            <constraint firstItem="P5d-Ql-3Pn" firstAttribute="trailing" secondItem="pwQ-gH-jEy" secondAttribute="trailing" id="w5G-TH-FpH"/>
+                            <constraint firstItem="P5d-Ql-3Pn" firstAttribute="leading" secondItem="pwQ-gH-jEy" secondAttribute="leading" id="zCj-9l-aUS"/>
+                            <constraint firstItem="tM3-Tg-gP6" firstAttribute="centerX" secondItem="LoB-Ex-bnc" secondAttribute="centerX" id="zuG-AU-Jpx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="driverBidLabel" destination="tdu-kL-gey" id="vgc-Ce-zqv"/>
+                        <outlet property="map" destination="chZ-K2-PcS" id="rhR-Zd-o1R"/>
+                        <outlet property="riderDestinationLabel" destination="P5d-Ql-3Pn" id="0Uo-EU-HN0"/>
+                        <outlet property="riderPickUpTimeLabel" destination="ZxG-o4-aRa" id="rQP-vF-zCw"/>
+                        <outlet property="riderUsernameLabel" destination="pwQ-gH-jEy" id="jSh-Vd-fUB"/>
+                        <outlet property="sendOfferOutlet" destination="tM3-Tg-gP6" id="W3H-Sb-RXn"/>
+                        <outlet property="tokenChargeTextField" destination="6gO-uE-B4I" id="XJB-rF-nNi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vII-gu-bOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3372" y="474.51274362818594"/>
+        </scene>
+        <!--Driver Pick Me Up View Controller-->
+        <scene sceneID="dSu-XQ-jfd">
+            <objects>
+                <viewController id="i5X-2a-zZo" customClass="DriverPickMeUpViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bf1-a4-zyq"/>
+                        <viewControllerLayoutGuide type="bottom" id="pdr-5i-cQ6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hIl-jR-eVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ride In Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmc-af-CTd">
+                                <rect key="frame" x="80" y="69" width="215" height="37"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqy-oZ-xyB">
+                                <rect key="frame" x="130" y="338" width="114" height="30"/>
+                                <state key="normal" title="Open Navigation"/>
+                                <connections>
+                                    <action selector="openNavigation:" destination="i5X-2a-zZo" eventType="touchUpInside" id="Sob-hf-6m2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ov-kZ-qiv">
+                                <rect key="frame" x="292" y="624" width="67" height="35"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="logOutDriverFromPickMeUp" id="0nU-QJ-Rlf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bqy-oZ-xyB" firstAttribute="centerX" secondItem="hIl-jR-eVr" secondAttribute="centerX" id="7Mw-tU-eqz"/>
+                            <constraint firstItem="zmc-af-CTd" firstAttribute="centerX" secondItem="Bqy-oZ-xyB" secondAttribute="centerX" id="Bra-Kn-N4z"/>
+                            <constraint firstItem="pdr-5i-cQ6" firstAttribute="top" secondItem="4ov-kZ-qiv" secondAttribute="bottom" constant="8" symbolic="YES" id="Fgi-Ro-K7h"/>
+                            <constraint firstItem="pdr-5i-cQ6" firstAttribute="top" secondItem="Bqy-oZ-xyB" secondAttribute="bottom" constant="299" id="c9C-yg-h4d"/>
+                            <constraint firstItem="zmc-af-CTd" firstAttribute="top" secondItem="Bf1-a4-zyq" secondAttribute="bottom" constant="49" id="hA6-qn-jKZ"/>
+                            <constraint firstItem="4ov-kZ-qiv" firstAttribute="trailing" secondItem="hIl-jR-eVr" secondAttribute="trailingMargin" id="u7Q-5L-9Cq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QC-aI-GBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4268" y="469.1154422788606"/>
+        </scene>
+        <!--Driver Profile View Controller-->
+        <scene sceneID="2ia-gj-jDW">
+            <objects>
+                <viewController id="o5k-pl-J9p" customClass="DriverProfileViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzI-2y-iKC"/>
+                        <viewControllerLayoutGuide type="bottom" id="r7f-fX-RXa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xab-8y-L7w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rte-df-A1j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="My Profile" id="n3w-8f-dCW">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Pqi-7o-dvL">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="logDriverOutSegue" id="NbB-we-xSY"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Preferences" id="GJG-cw-skz">
+                                            <connections>
+                                                <segue destination="Qx7-JY-SCE" kind="show" id="whm-nL-6mI"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMy-rR-kOO">
+                                <rect key="frame" x="67" y="125" width="241" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="lgD-43-w2W"/>
+                                    <constraint firstAttribute="height" constant="281" id="njZ-a9-heP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3p-BO-PSX">
+                                <rect key="frame" x="80" y="82" width="214" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y3p-BO-PSX" secondAttribute="height" multiplier="214:35" id="4kH-8p-14o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Import New Profile Picture"/>
+                                <connections>
+                                    <action selector="importImage:" destination="o5k-pl-J9p" eventType="touchUpInside" id="Nrd-bL-G5O"/>
+                                    <action selector="importImage:" destination="cbg-LS-Gsq" eventType="touchUpInside" id="UQf-b3-0wa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nH9-ul-6yo">
+                                <rect key="frame" x="94" y="575.5" width="187" height="49.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nH9-ul-6yo" secondAttribute="height" multiplier="132:35" id="QOi-xf-deS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="View Current Requests"/>
+                                <connections>
+                                    <segue destination="ilo-5b-1ck" kind="show" identifier="showRiderRequests" id="McW-OL-M2n"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Tokens:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnF-aq-poq">
+                                <rect key="frame" x="110" y="493" width="154" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pnF-aq-poq" secondAttribute="height" multiplier="154:23" id="Nvc-hE-CwL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epg-AG-FOs">
+                                <rect key="frame" x="257" y="439" width="102" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="oSM-k0-fkU"/>
+                                    <constraint firstAttribute="width" constant="102" id="y9x-Mn-k9D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Save Picture"/>
+                                <connections>
+                                    <action selector="saveDetails:" destination="o5k-pl-J9p" eventType="touchUpInside" id="Oc9-3c-J7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOP-B6-TJt">
+                                <rect key="frame" x="16" y="534" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nMy-rR-kOO" firstAttribute="top" secondItem="Y3p-BO-PSX" secondAttribute="bottom" constant="8" id="3D9-2y-212"/>
+                            <constraint firstAttribute="trailing" secondItem="rte-df-A1j" secondAttribute="trailing" id="5TC-pH-bGc"/>
+                            <constraint firstItem="Y3p-BO-PSX" firstAttribute="centerX" secondItem="xab-8y-L7w" secondAttribute="centerX" id="5ss-9c-e9G"/>
+                            <constraint firstItem="r7f-fX-RXa" firstAttribute="top" secondItem="nH9-ul-6yo" secondAttribute="bottom" constant="42" id="DbH-92-9b8"/>
+                            <constraint firstItem="epg-AG-FOs" firstAttribute="trailing" secondItem="xab-8y-L7w" secondAttribute="trailingMargin" id="Kw9-Tg-fbw"/>
+                            <constraint firstItem="rte-df-A1j" firstAttribute="top" secondItem="KzI-2y-iKC" secondAttribute="bottom" id="Lwi-r6-31c"/>
+                            <constraint firstItem="pnF-aq-poq" firstAttribute="top" secondItem="nMy-rR-kOO" secondAttribute="bottom" constant="87" id="QLj-Es-h3F"/>
+                            <constraint firstItem="nMy-rR-kOO" firstAttribute="centerX" secondItem="xab-8y-L7w" secondAttribute="centerX" id="RCg-xZ-Qnq"/>
+                            <constraint firstItem="epg-AG-FOs" firstAttribute="top" secondItem="nMy-rR-kOO" secondAttribute="bottom" constant="33" id="SXS-18-ur3"/>
+                            <constraint firstItem="Y3p-BO-PSX" firstAttribute="top" secondItem="rte-df-A1j" secondAttribute="bottom" constant="18" id="aOt-na-6mf"/>
+                            <constraint firstItem="nH9-ul-6yo" firstAttribute="centerX" secondItem="xab-8y-L7w" secondAttribute="centerX" id="g3I-Hd-sZE"/>
+                            <constraint firstItem="rte-df-A1j" firstAttribute="leading" secondItem="xab-8y-L7w" secondAttribute="leading" id="hSa-YC-yvT"/>
+                            <constraint firstItem="pnF-aq-poq" firstAttribute="centerX" secondItem="xab-8y-L7w" secondAttribute="centerX" id="wAl-nG-Tfi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="driverTokensCountLabel" destination="pnF-aq-poq" id="5Vj-oQ-6KF"/>
+                        <outlet property="profileImageView" destination="nMy-rR-kOO" id="ofc-jY-y54"/>
+                        <segue destination="i5X-2a-zZo" kind="show" identifier="getToNavigation" id="zG2-QU-hiJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSN-v8-me4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="475.41229385307349"/>
+        </scene>
+        <!--Driver Preferences View Controller-->
+        <scene sceneID="M31-68-32B">
+            <objects>
+                <viewController id="Qx7-JY-SCE" customClass="DriverPreferencesViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pEL-7N-pKe"/>
+                        <viewControllerLayoutGuide type="bottom" id="nsh-p5-aIh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f8O-yx-EgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hvl-nF-1YE">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Preferences" id="lqB-YH-j64">
+                                        <barButtonItem key="leftBarButtonItem" title="Profile" id="zGb-9U-vpx">
+                                            <connections>
+                                                <segue destination="o5k-pl-J9p" kind="show" identifier="fromDriverPreferencesSegue" id="x5Z-M7-4yb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LT3-zF-Emf">
+                                <rect key="frame" x="307" y="193" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notify Me When:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB6-zl-3CB">
+                                <rect key="frame" x="47" y="113" width="136" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Rider Accepts My Offer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYM-qv-293">
+                                <rect key="frame" x="16" y="197" width="214" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Rider Chooses Another Offer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OK-iI-VVL">
+                                <rect key="frame" x="16" y="264" width="259" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-XU-8zb">
+                                <rect key="frame" x="307" y="260" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Special Token Deals Are Active:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E50-sr-QL6">
+                                <rect key="frame" x="16" y="326" width="260" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nfx-7p-j0o">
+                                <rect key="frame" x="307" y="322" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="driverAcceptOfferOutlet" destination="LT3-zF-Emf" id="XuO-v7-t8k"/>
+                        <outlet property="driverDeclineOfferOutlet" destination="yUw-XU-8zb" id="14C-ky-Jb3"/>
+                        <outlet property="tokenDealsOutlet" destination="nfx-7p-j0o" id="bdX-7o-hNq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9DM-i4-aM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="1495"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0Z5-am-bjQ">
+            <objects>
+                <navigationController id="ilo-5b-1ck" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fHc-Pf-WDO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mUR-st-xKQ" kind="relationship" relationship="rootViewController" id="nTO-LP-sbY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lnm-DQ-t8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="475"/>
+        </scene>
+        <!--Rider Preferences View Controller-->
+        <scene sceneID="Cbf-RW-fdd">
+            <objects>
+                <viewController id="9bM-wf-oK6" customClass="RiderPreferencesViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ub8-vH-oXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRC-oq-lGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JDF-D2-uPh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-hD-pP6">
+                                <rect key="frame" x="307" y="208" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notify Me When:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGS-28-Tjh">
+                                <rect key="frame" x="47" y="128" width="136" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Driver Sends Me an Offer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzn-Ff-7Cc">
+                                <rect key="frame" x="22" y="212" width="228" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A Driver Cancels an Offer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpy-if-Mqd">
+                                <rect key="frame" x="24" y="279" width="213" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-VS-lEh">
+                                <rect key="frame" x="307" y="275" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Special Token Deals Are Active:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESF-Hc-OwQ">
+                                <rect key="frame" x="16" y="341" width="260" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dXk-SG-L93">
+                                <rect key="frame" x="307" y="337" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fpa-0q-6Rz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Preferences" id="rJf-fX-8Md">
+                                        <barButtonItem key="leftBarButtonItem" title="Profile" id="Qjo-qx-Yld">
+                                            <connections>
+                                                <segue destination="cbg-LS-Gsq" kind="show" identifier="fromRiderPreferencesSegue" id="mCV-0z-E9K"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="notifyRiderCancelOfferOutlet" destination="gVW-VS-lEh" id="Mhf-RS-WZi"/>
+                        <outlet property="notifyRiderOfferOutlet" destination="4Oa-hD-pP6" id="FoX-Ol-t0V"/>
+                        <outlet property="notifyTokenDeals" destination="dXk-SG-L93" id="FV2-oJ-t9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VrO-Dm-nMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-1454"/>
+        </scene>
+        <!--Rider Profile View Controller-->
+        <scene sceneID="5Gc-qw-D0A">
+            <objects>
+                <viewController id="cbg-LS-Gsq" customClass="RiderProfileViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pQI-n9-gLn"/>
+                        <viewControllerLayoutGuide type="bottom" id="6ye-AW-XNp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ufk-ex-Hu0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0L-ti-vhq">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="My Profile" id="SXW-d0-QEb">
+                                        <barButtonItem key="leftBarButtonItem" title="Logout" id="AbY-Vt-Ehw">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" identifier="logOutSegue" id="IHZ-XO-FQX"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem title="Preferences" id="qGB-Yb-yYu">
+                                                <connections>
+                                                    <segue destination="9bM-wf-oK6" kind="show" identifier="showRiderPreferences" id="DHy-aB-w4S"/>
+                                                </connections>
+                                            </barButtonItem>
+                                            <barButtonItem style="plain" id="o6s-ni-FVO">
+                                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KFo-4p-wTc">
+                                                    <rect key="frame" x="229" y="4" width="30" height="35"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                                </button>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpM-y8-Bak">
+                                <rect key="frame" x="80" y="77" width="214" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="Eie-Fu-52L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Import New Profile Picture"/>
+                                <connections>
+                                    <action selector="importImage:" destination="cbg-LS-Gsq" eventType="touchUpInside" id="cGe-Nm-kZk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fID-L6-Eab">
+                                <rect key="frame" x="121" y="580" width="132" height="35"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Call a PickMeUp!"/>
+                                <connections>
+                                    <action selector="callorCheckButton:" destination="cbg-LS-Gsq" eventType="touchUpInside" id="LZg-Le-Hj4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEO-2p-Emk">
+                                <rect key="frame" x="257" y="421" width="102" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="kKn-ss-oo5"/>
+                                    <constraint firstAttribute="height" constant="35" id="xKq-PQ-30W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Save Picture"/>
+                                <connections>
+                                    <action selector="savePicture:" destination="cbg-LS-Gsq" eventType="touchUpInside" id="zy8-JZ-zBc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL2-hk-D0z">
+                                <rect key="frame" x="16" y="524" width="97" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="0gp-PG-4Hk"/>
+                                    <constraint firstAttribute="height" constant="35" id="2TM-2J-PfF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Help Center"/>
+                                <connections>
+                                    <action selector="helpCenterButton:" destination="cbg-LS-Gsq" eventType="touchUpInside" id="mdW-Kd-8Bd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Tokens:  0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw8-Hi-55d">
+                                <rect key="frame" x="110" y="493" width="154" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nw8-Hi-55d" secondAttribute="height" multiplier="154:23" id="4W3-1Q-hXT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PVx-2B-vuf">
+                                <rect key="frame" x="67" y="120" width="241" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="281" id="Leu-XF-oVG"/>
+                                    <constraint firstAttribute="width" constant="241" id="drk-8g-Jub"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nL2-hk-D0z" firstAttribute="top" secondItem="PVx-2B-vuf" secondAttribute="bottom" constant="123" id="065-fq-cjZ"/>
+                            <constraint firstItem="fID-L6-Eab" firstAttribute="centerX" secondItem="Ufk-ex-Hu0" secondAttribute="centerX" id="0ck-nd-69W"/>
+                            <constraint firstItem="PVx-2B-vuf" firstAttribute="centerX" secondItem="Ufk-ex-Hu0" secondAttribute="centerX" id="8FX-Ct-3UH"/>
+                            <constraint firstItem="JpM-y8-Bak" firstAttribute="top" secondItem="n0L-ti-vhq" secondAttribute="bottom" constant="13" id="EYg-1o-Rzt"/>
+                            <constraint firstItem="6ye-AW-XNp" firstAttribute="top" secondItem="fID-L6-Eab" secondAttribute="bottom" constant="52" id="K3b-Fo-h76"/>
+                            <constraint firstItem="JpM-y8-Bak" firstAttribute="centerX" secondItem="Ufk-ex-Hu0" secondAttribute="centerX" id="P0f-Ct-z7j"/>
+                            <constraint firstItem="nw8-Hi-55d" firstAttribute="top" secondItem="PVx-2B-vuf" secondAttribute="bottom" constant="92" id="RSs-P8-IUw"/>
+                            <constraint firstItem="rEO-2p-Emk" firstAttribute="trailing" secondItem="Ufk-ex-Hu0" secondAttribute="trailingMargin" id="Rka-1h-rwE"/>
+                            <constraint firstItem="nL2-hk-D0z" firstAttribute="leading" secondItem="Ufk-ex-Hu0" secondAttribute="leadingMargin" id="Zfq-r9-EJG"/>
+                            <constraint firstAttribute="trailing" secondItem="n0L-ti-vhq" secondAttribute="trailing" id="ckZ-nq-B2T"/>
+                            <constraint firstItem="rEO-2p-Emk" firstAttribute="top" secondItem="PVx-2B-vuf" secondAttribute="bottom" constant="20" id="eAe-bH-otq"/>
+                            <constraint firstItem="PVx-2B-vuf" firstAttribute="top" secondItem="JpM-y8-Bak" secondAttribute="bottom" constant="8" id="r2h-UL-q14"/>
+                            <constraint firstItem="n0L-ti-vhq" firstAttribute="leading" secondItem="Ufk-ex-Hu0" secondAttribute="leading" id="s78-aQ-XUN"/>
+                            <constraint firstItem="n0L-ti-vhq" firstAttribute="top" secondItem="pQI-n9-gLn" secondAttribute="bottom" id="wlT-Bi-POT"/>
+                            <constraint firstItem="nw8-Hi-55d" firstAttribute="centerX" secondItem="Ufk-ex-Hu0" secondAttribute="centerX" id="xLf-Th-21h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="callOrCheckOutlet" destination="fID-L6-Eab" id="Own-Ov-3cN"/>
+                        <outlet property="profileImageView" destination="PVx-2B-vuf" id="5CT-li-HCA"/>
+                        <outlet property="tokenCountLabel" destination="nw8-Hi-55d" id="zXn-JG-7ip"/>
+                        <segue destination="bRt-j8-JeE" kind="show" identifier="showRiderOrderViewController" id="VIQ-7v-fQb"/>
+                        <segue destination="yU1-rG-LU0" kind="show" identifier="goToNavigation" id="jPi-e7-wTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSe-p7-doq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="640.79999999999995" y="-344.07796101949026"/>
+        </scene>
+        <!--Rider Order View Controller-->
+        <scene sceneID="HWJ-xn-ruG">
+            <objects>
+                <viewController id="bRt-j8-JeE" customClass="RiderOrderViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cG9-0v-lMP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tx5-Yv-AJ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="doQ-gs-YMm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alU-zA-ubv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Order a PickMeUp" id="YZI-U7-IZm">
+                                        <barButtonItem key="leftBarButtonItem" title="Profile" id="zgZ-Vm-SQq">
+                                            <connections>
+                                                <segue destination="cbg-LS-Gsq" kind="show" identifier="backToRiderProfileViewController" id="U01-90-o3k"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9xN-oR-94o">
+                                <rect key="frame" x="16" y="165" width="343" height="310"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="9uQ-ro-DxD"/>
+                                    <constraint firstAttribute="width" constant="343" id="DaA-bt-8Sy"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-dz-qgK">
+                                <rect key="frame" x="123" y="606" width="129" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="I7c-dz-qgK" secondAttribute="height" multiplier="129:35" id="N45-zM-R3m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Order PickMeUp"/>
+                                <connections>
+                                    <action selector="callPickMeUp:" destination="bRt-j8-JeE" eventType="touchUpInside" id="ASz-au-Bna"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="KSg-CD-xWn">
+                                <rect key="frame" x="93" y="546" width="188" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="NBf-PB-Yvf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="ASAP"/>
+                                    <segment title="15 Min~"/>
+                                    <segment title="1 Hour+"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fa-m7-OxR">
+                                <rect key="frame" x="16" y="551" width="56" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="fFC-59-D7n"/>
+                                    <constraint firstAttribute="height" constant="23" id="qZt-1j-9XH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8c-ps-YqC">
+                                <rect key="frame" x="63" y="529" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="b93-OQ-x5H"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="detailButton:" destination="bRt-j8-JeE" eventType="touchUpInside" id="IkA-mr-Gho"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akA-NI-Y1v">
+                                <rect key="frame" x="113" y="57" width="262" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="D4T-7U-H5c"/>
+                                    <constraint firstAttribute="height" constant="120" id="cXf-sx-xsH"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUG-tw-WDS">
+                                <rect key="frame" x="6" y="108" width="106" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eUG-tw-WDS" secondAttribute="height" multiplier="77:19" id="5zG-X8-CAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOA-zr-WbZ">
+                                <rect key="frame" x="119" y="494" width="136" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="2bP-m2-U2M"/>
+                                    <constraint firstAttribute="height" constant="35" id="J4i-PR-QXf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="View Ride Offers"/>
+                                <connections>
+                                    <segue destination="nfi-7f-nWP" kind="show" identifier="showDriverOffers" id="mRN-th-JC4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eUG-tw-WDS" firstAttribute="top" secondItem="alU-zA-ubv" secondAttribute="bottom" constant="44" id="6Lx-kD-z7U"/>
+                            <constraint firstItem="akA-NI-Y1v" firstAttribute="leading" secondItem="eUG-tw-WDS" secondAttribute="trailing" constant="1" id="Etk-fp-kVK"/>
+                            <constraint firstItem="S8c-ps-YqC" firstAttribute="leading" secondItem="doQ-gs-YMm" secondAttribute="leadingMargin" constant="47" id="HCF-g7-wym"/>
+                            <constraint firstItem="6Fa-m7-OxR" firstAttribute="top" secondItem="S8c-ps-YqC" secondAttribute="bottom" id="Hqf-4w-Erw"/>
+                            <constraint firstItem="alU-zA-ubv" firstAttribute="top" secondItem="cG9-0v-lMP" secondAttribute="bottom" id="MuQ-Xx-IbJ"/>
+                            <constraint firstItem="9xN-oR-94o" firstAttribute="top" secondItem="alU-zA-ubv" secondAttribute="bottom" constant="101" id="P31-dj-8BT"/>
+                            <constraint firstItem="KOA-zr-WbZ" firstAttribute="top" secondItem="9xN-oR-94o" secondAttribute="bottom" constant="19" id="Ptq-u9-wCu"/>
+                            <constraint firstItem="eUG-tw-WDS" firstAttribute="leading" secondItem="doQ-gs-YMm" secondAttribute="leading" constant="6" id="Sa1-ZF-qWc"/>
+                            <constraint firstItem="S8c-ps-YqC" firstAttribute="top" secondItem="9xN-oR-94o" secondAttribute="bottom" constant="54" id="atf-KB-I4f"/>
+                            <constraint firstItem="KSg-CD-xWn" firstAttribute="centerX" secondItem="doQ-gs-YMm" secondAttribute="centerX" id="eBm-Xd-Vvf"/>
+                            <constraint firstItem="KOA-zr-WbZ" firstAttribute="centerX" secondItem="doQ-gs-YMm" secondAttribute="centerX" id="hXx-w9-ksp"/>
+                            <constraint firstItem="6Fa-m7-OxR" firstAttribute="leading" secondItem="doQ-gs-YMm" secondAttribute="leadingMargin" id="iXb-pd-ZVB"/>
+                            <constraint firstItem="9xN-oR-94o" firstAttribute="centerX" secondItem="doQ-gs-YMm" secondAttribute="centerX" id="jJo-vV-ZMH"/>
+                            <constraint firstItem="akA-NI-Y1v" firstAttribute="top" secondItem="cG9-0v-lMP" secondAttribute="bottom" constant="37" id="kM5-Lk-Lvo"/>
+                            <constraint firstAttribute="trailing" secondItem="alU-zA-ubv" secondAttribute="trailing" id="mTZ-CY-2KZ"/>
+                            <constraint firstItem="KSg-CD-xWn" firstAttribute="top" secondItem="KOA-zr-WbZ" secondAttribute="bottom" constant="17" id="pNR-yM-pOl"/>
+                            <constraint firstItem="I7c-dz-qgK" firstAttribute="centerX" secondItem="doQ-gs-YMm" secondAttribute="centerX" id="qfW-vw-UMD"/>
+                            <constraint firstItem="Tx5-Yv-AJ9" firstAttribute="top" secondItem="I7c-dz-qgK" secondAttribute="bottom" constant="26" id="xMG-Rv-xSg"/>
+                            <constraint firstItem="alU-zA-ubv" firstAttribute="leading" secondItem="doQ-gs-YMm" secondAttribute="leading" id="zL7-Wa-0X0"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="callButtonOutlet" destination="I7c-dz-qgK" id="O6A-4A-ZrE"/>
+                        <outlet property="destinationLabel" destination="eUG-tw-WDS" id="coe-GL-4a9"/>
+                        <outlet property="destinationPicker" destination="akA-NI-Y1v" id="WBh-JE-R80"/>
+                        <outlet property="detailButtonOutlet" destination="S8c-ps-YqC" id="vWC-ZO-1Vx"/>
+                        <outlet property="map" destination="9xN-oR-94o" id="RkD-T1-VzX"/>
+                        <outlet property="rideTimeSelection" destination="KSg-CD-xWn" id="mOQ-bo-jhY"/>
+                        <outlet property="timeLabel" destination="6Fa-m7-OxR" id="i0j-5x-Gqr"/>
+                        <outlet property="viewRideOffersOutlet" destination="KOA-zr-WbZ" id="yTE-fR-nbq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUh-O7-luO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="-1093.4032983508246"/>
+        </scene>
+        <!--Offers List-->
+        <scene sceneID="isq-XG-LxB">
+            <objects>
+                <tableViewController id="26v-lY-es9" customClass="RiderSeeOffersTableViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="HJA-OA-zeg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="faH-DN-pUk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="faH-DN-pUk" id="IOK-Sw-S4g">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="dqC-pW-sdX" kind="show" identifier="showRiderViewOfferViewController" id="jHW-pr-Ekd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="26v-lY-es9" id="WqA-jJ-q4M"/>
+                            <outlet property="delegate" destination="26v-lY-es9" id="dGk-lJ-eKQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Offers List" id="H5T-c9-dL6">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Profile" id="0Pg-P2-rZd">
+                                <connections>
+                                    <segue destination="cbg-LS-Gsq" kind="show" identifier="leaveOffersListSegue" id="M1o-Am-fku"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem style="plain" id="Tf1-dy-Kae">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cua-96-7Er">
+                                    <rect key="frame" x="73" y="7" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZ5-bX-uBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2446" y="-344"/>
+        </scene>
+        <!--PickMeUp Offer!-->
+        <scene sceneID="gIB-Sq-CLG">
+            <objects>
+                <viewController id="dqC-pW-sdX" customClass="RiderViewOfferViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ygZ-Fm-vW7"/>
+                        <viewControllerLayoutGuide type="bottom" id="0jH-ac-GQL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g0P-2y-OPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfZ-aL-zfz">
+                                <rect key="frame" x="67" y="457" width="52" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NfZ-aL-zfz" secondAttribute="height" multiplier="52:23" id="tNg-kH-F7g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywE-FL-XiL">
+                                <rect key="frame" x="49" y="488" width="89" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ywE-FL-XiL" secondAttribute="height" multiplier="89:23" id="jhR-Wq-8DZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unix:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjK-P1-60H">
+                                <rect key="frame" x="73" y="519" width="40" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zjK-P1-60H" secondAttribute="height" multiplier="40:23" id="9fC-UW-lDK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact #:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHt-m0-J9V">
+                                <rect key="frame" x="50" y="550" width="88" height="23"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8s-aJ-QuM">
+                                <rect key="frame" x="134" y="601" width="107" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b8s-aJ-QuM" secondAttribute="height" multiplier="107:35" id="dIC-lH-WlI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <state key="normal" title="Accept Offer"/>
+                                <connections>
+                                    <action selector="acceptOffer:" destination="dqC-pW-sdX" eventType="touchUpInside" id="cAA-qS-PAO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLANK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygA-Js-def">
+                                <rect key="frame" x="256" y="457" width="57" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ygA-Js-def" secondAttribute="height" multiplier="57:23" id="twz-Iw-wPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLANK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zZ-vX-8KT">
+                                <rect key="frame" x="256" y="488" width="57" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7zZ-vX-8KT" secondAttribute="height" multiplier="57:23" id="pOo-vB-Dam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLANK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgt-TS-iJb">
+                                <rect key="frame" x="256" y="519" width="57" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jgt-TS-iJb" secondAttribute="height" multiplier="57:23" id="Szk-Xm-ZeH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BLANK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-iq-k57">
+                                <rect key="frame" x="256" y="550" width="57" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6yc-iq-k57" secondAttribute="height" multiplier="57:23" id="bKX-DE-nuP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cWc-dd-PEw">
+                                <rect key="frame" x="67" y="114" width="241" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="241" id="59e-qQ-0XM"/>
+                                    <constraint firstAttribute="height" constant="281" id="6Vv-qr-h2b"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jgt-TS-iJb" firstAttribute="top" secondItem="7zZ-vX-8KT" secondAttribute="bottom" constant="8" id="2yD-bD-ZgD"/>
+                            <constraint firstItem="zjK-P1-60H" firstAttribute="top" secondItem="ywE-FL-XiL" secondAttribute="bottom" constant="8" id="3cI-K4-Db1"/>
+                            <constraint firstItem="cWc-dd-PEw" firstAttribute="top" secondItem="ygZ-Fm-vW7" secondAttribute="bottom" constant="50" id="4IE-l5-SVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jgt-TS-iJb" secondAttribute="trailing" constant="46" id="AuM-R5-7ct"/>
+                            <constraint firstItem="hHt-m0-J9V" firstAttribute="top" secondItem="zjK-P1-60H" secondAttribute="bottom" constant="8" id="CaD-dR-mUI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7zZ-vX-8KT" secondAttribute="trailing" constant="46" id="Tkq-va-bOQ"/>
+                            <constraint firstItem="7zZ-vX-8KT" firstAttribute="top" secondItem="ygA-Js-def" secondAttribute="bottom" constant="8" id="Z4n-Fl-Gyi"/>
+                            <constraint firstItem="zjK-P1-60H" firstAttribute="leading" secondItem="g0P-2y-OPp" secondAttribute="leadingMargin" constant="57" id="ZAt-Dw-eMK"/>
+                            <constraint firstItem="b8s-aJ-QuM" firstAttribute="centerX" secondItem="g0P-2y-OPp" secondAttribute="centerX" id="ZwM-Vk-hPL"/>
+                            <constraint firstItem="NfZ-aL-zfz" firstAttribute="leading" secondItem="g0P-2y-OPp" secondAttribute="leadingMargin" constant="51" id="alt-25-vRs"/>
+                            <constraint firstItem="cWc-dd-PEw" firstAttribute="centerX" secondItem="g0P-2y-OPp" secondAttribute="centerX" id="bYo-Xd-qxU"/>
+                            <constraint firstItem="6yc-iq-k57" firstAttribute="top" secondItem="Jgt-TS-iJb" secondAttribute="bottom" constant="8" id="ccA-R5-1dX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6yc-iq-k57" secondAttribute="trailing" constant="46" id="ejC-dl-ac3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ygA-Js-def" secondAttribute="trailing" constant="46" id="f1f-ws-u5m"/>
+                            <constraint firstItem="hHt-m0-J9V" firstAttribute="leading" secondItem="g0P-2y-OPp" secondAttribute="leadingMargin" constant="34" id="hsW-v9-c3O"/>
+                            <constraint firstItem="ywE-FL-XiL" firstAttribute="leading" secondItem="g0P-2y-OPp" secondAttribute="leadingMargin" constant="33" id="jgg-a7-AZ6"/>
+                            <constraint firstItem="NfZ-aL-zfz" firstAttribute="top" secondItem="cWc-dd-PEw" secondAttribute="bottom" constant="62" id="nx0-CS-6Xz"/>
+                            <constraint firstItem="0jH-ac-GQL" firstAttribute="top" secondItem="b8s-aJ-QuM" secondAttribute="bottom" constant="31" id="pK1-bd-uvk"/>
+                            <constraint firstItem="ygA-Js-def" firstAttribute="top" secondItem="cWc-dd-PEw" secondAttribute="bottom" constant="62" id="s3d-Z3-P0f"/>
+                            <constraint firstItem="ywE-FL-XiL" firstAttribute="top" secondItem="NfZ-aL-zfz" secondAttribute="bottom" constant="8" id="x4d-Xf-0Ss"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PickMeUp Offer!" id="DTn-Lf-OEH"/>
+                    <connections>
+                        <outlet property="acceptOrViewOutlet" destination="b8s-aJ-QuM" id="0rM-Pf-HfW"/>
+                        <outlet property="driverClassYear" destination="7zZ-vX-8KT" id="iym-R5-vmK"/>
+                        <outlet property="driverName" destination="ygA-Js-def" id="Qxl-Y9-XLC"/>
+                        <outlet property="driverNumber" destination="6yc-iq-k57" id="9I1-W7-W10"/>
+                        <outlet property="driverUnix" destination="Jgt-TS-iJb" id="lfT-Nv-8Fv"/>
+                        <outlet property="profilePic" destination="cWc-dd-PEw" id="iNM-Nh-rbP"/>
+                        <segue destination="yU1-rG-LU0" kind="show" identifier="goToRiderPickMeUp" id="lo1-GQ-Vg1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioR-5b-TuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3372" y="-344.07796101949026"/>
+        </scene>
+        <!--PickMeUp Ride-->
+        <scene sceneID="Wl7-dN-Y3V">
+            <objects>
+                <viewController id="yU1-rG-LU0" customClass="RiderPickMeUpViewController" customModule="PickMeUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ka6-Yw-6A6"/>
+                        <viewControllerLayoutGuide type="bottom" id="L3D-Ua-As4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KRN-AR-8eZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cNA-IM-7JW">
+                                <rect key="frame" x="16" y="108" width="343" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4I-wF-XTe">
+                                <rect key="frame" x="146" y="532" width="82" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="VnR-13-f4c"/>
+                                    <constraint firstAttribute="height" constant="30" id="k4Z-qS-4H3"/>
+                                </constraints>
+                                <state key="normal" title="Cancel Ride"/>
+                                <connections>
+                                    <action selector="cancelRide:" destination="yU1-rG-LU0" eventType="touchUpInside" id="q4L-uJ-eXM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vyp-8h-Wd3">
+                                <rect key="frame" x="304" y="617" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="J2q-C5-nWP"/>
+                                    <constraint firstAttribute="width" constant="55" id="rCs-oe-2bB"/>
+                                </constraints>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="endRideSegue" id="bJn-ai-XXE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4p-9g-YdK">
+                                <rect key="frame" x="9" y="617" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F02-le-wms"/>
+                                    <constraint firstAttribute="width" constant="44" id="Knv-ln-GuT"/>
+                                </constraints>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="cbg-LS-Gsq" kind="show" identifier="rideToProfileSegue" id="Sxl-uE-CUh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver On The Way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeV-Iz-2ra">
+                                <rect key="frame" x="113" y="464" width="149" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QeV-Iz-2ra" secondAttribute="height" multiplier="68:21" id="2SI-83-mgo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4p-9g-YdK" firstAttribute="leading" secondItem="KRN-AR-8eZ" secondAttribute="leading" constant="9" id="MPV-ja-yfQ"/>
+                            <constraint firstItem="u4I-wF-XTe" firstAttribute="centerX" secondItem="KRN-AR-8eZ" secondAttribute="centerX" id="WWd-CO-OEm"/>
+                            <constraint firstItem="Vyp-8h-Wd3" firstAttribute="trailing" secondItem="KRN-AR-8eZ" secondAttribute="trailingMargin" id="af1-Ln-OkL"/>
+                            <constraint firstItem="L3D-Ua-As4" firstAttribute="top" secondItem="QeV-Iz-2ra" secondAttribute="bottom" constant="157" id="bVg-3d-vbO"/>
+                            <constraint firstItem="QeV-Iz-2ra" firstAttribute="centerX" secondItem="KRN-AR-8eZ" secondAttribute="centerX" id="k2Y-oJ-Ydh"/>
+                            <constraint firstItem="L3D-Ua-As4" firstAttribute="top" secondItem="Vyp-8h-Wd3" secondAttribute="bottom" constant="20" id="lSm-io-en9"/>
+                            <constraint firstItem="u4I-wF-XTe" firstAttribute="top" secondItem="QeV-Iz-2ra" secondAttribute="bottom" constant="22" id="tbM-px-DnZ"/>
+                            <constraint firstItem="L3D-Ua-As4" firstAttribute="top" secondItem="b4p-9g-YdK" secondAttribute="bottom" constant="20" id="xYZ-22-jcj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PickMeUp Ride" id="cO0-lF-KpK"/>
+                    <connections>
+                        <outlet property="driverDistanceLabel" destination="QeV-Iz-2ra" id="ZjN-Di-jbM"/>
+                        <outlet property="map" destination="cNA-IM-7JW" id="VpG-YI-Bz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmm-fC-yiE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4312.8000000000002" y="-344.07796101949026"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B0s-M0-vwR">
+            <objects>
+                <navigationController id="nfi-7f-nWP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mrx-yn-hFX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="26v-lY-es9" kind="relationship" relationship="rootViewController" id="he9-ET-FEv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIt-1b-RQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="-344"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PickMeUp1.jpg" width="1000" height="1000"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="USU-91-PF7"/>
+        <segue reference="NbB-we-xSY"/>
+        <segue reference="aet-hn-GYA"/>
+        <segue reference="jPi-e7-wTZ"/>
+    </inferredMetricsTieBreakers>
+</document>
